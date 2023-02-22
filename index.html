@@ -4,29 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Video</title>
-
-    <!-- styles -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <!-- preloader -->
-    <div class="preloader">
-      <img src="./preloader.gif" alt="preloader" />
-    </div>
-    <!-- header -->
-    <header>
-      <video class="video-container" muted autoplay loop>
-        <source src="./video.mp4" type="video/mp4" />
-      </video>
-      <h1>video project</h1>
-      <!-- video switch -->
-      <button class="switch-btn">
-        <span> play </span>
-        <span> pause </span>
-        <span class="switch"></span>
-      </button>
-    </header>
-    <!-- javascript -->
+    <video muted autoplay loop class="video-container">
+      <source src="./assets/video.mp4" type="video/mp4" />
+    </video>
+    <div id="layer"></div>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+      </label>
     <script src="app.js"></script>
   </body>
 </html>
